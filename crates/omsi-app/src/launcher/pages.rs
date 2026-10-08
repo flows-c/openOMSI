@@ -521,15 +521,12 @@ fn graphics_profiles_block(ui: &mut Ui, s: &mut Value, dirty: &mut f32, c: &mut 
 /// How the game looks and how fast it runs.
 fn graphics_tab(ui: &mut Ui, s: &mut Value, dirty: &mut f32, cols: [Rect; 2]) -> [f32; 2] {
     let mut c = Col::new(ui, cols[0], "Graphics");
-    // Quality presets, first: they set most of what follows. (OMSI's own
-    // option_presets/*.oop are named after the PCs of their day - "PC 2006", "X10 high",
-    // "Chicago Recommended" - which read as random words here.)
-    let presets: [(&str, serde_json::Value); 4] = [
-        ("Low", json!({"msaa": 1, "anisotropy": 2, "shadow_size": 1024, "ssao": false, "shadows": false, "detail_textures": false, "clouds": false, "view_distance": "600", "min_obj_size": 0.03, "max_obj_dist": "500", "mirror_size": 128, "mirror_refresh": "eco", "render_scale": "0.75", "texture_memory": 800})),
-        ("Medium", json!({"msaa": 2, "anisotropy": 4, "shadow_size": 2048, "ssao": false, "shadows": true, "detail_textures": true, "clouds": true, "view_distance": "900", "min_obj_size": 0.02, "max_obj_dist": "750", "mirror_size": 256, "mirror_refresh": "eco", "render_scale": "auto", "texture_memory": 1200})),
-        ("High", json!({"msaa": 4, "anisotropy": 8, "shadow_size": 2048, "ssao": true, "shadows": true, "detail_textures": true, "clouds": true, "view_distance": "auto", "min_obj_size": 0.013, "max_obj_dist": "auto", "mirror_size": 256, "mirror_refresh": "full", "render_scale": "auto", "texture_memory": 0})),
-        ("Ultra", json!({"msaa": 4, "anisotropy": 8, "shadow_size": 4096, "ssao": true, "shadows": true, "detail_textures": true, "clouds": true, "view_distance": "2000", "min_obj_size": 0.005, "max_obj_dist": "1500", "mirror_size": 512, "mirror_refresh": "full", "render_scale": "auto", "texture_memory": 0})),
-    ];
+    // The graphics mode first, then the quality presets for it: they set most of what
+    // follows and keep the mode (`graphics_presets_for`). (OMSI's own option_presets/*.oop
+    // are named after the PCs of their day - "PC 2006", "X10 high", "Chicago Recommended" -
+    // which read as random words here.)
+    sel_setting(ui, s, dirty, "s-graphics", c.row(), "Graphics", "graphics", &[("vanilla", "Vanilla (as OMSI 2)"), ("vanilla_plus", "Vanilla+"), ("enhanced", "Enhanced"), ("enhanced_plus", "Enhanced+")]);
+    let presets = core::graphics_presets_for(get(s, "graphics").as_str().unwrap_or("vanilla_plus"));
     {
         // the preset the settings match now, else "Custom"
         let matches = |p: &serde_json::Value| p.as_object().map(|o| o.iter().all(|(k, v)| {
@@ -550,7 +547,6 @@ fn graphics_tab(ui: &mut Ui, s: &mut Value, dirty: &mut f32, cols: [Rect; 2]) ->
             }
         }
     }
-    sel_setting(ui, s, dirty, "s-graphics", c.row(), "Graphics", "graphics", &[("vanilla", "Vanilla (as OMSI 2)"), ("vanilla_plus", "Vanilla+"), ("enhanced", "Enhanced"), ("enhanced_plus", "Enhanced+")]);
     // Vanilla draws what OMSI 2 draws: no sun shadows, ambient occlusion or detail grain
     let classic = get(s, "graphics").as_str() == Some("vanilla");
     let traced = get(s, "graphics").as_str() == Some("enhanced_plus");
@@ -593,6 +589,11 @@ fn graphics_tab(ui: &mut Ui, s: &mut Value, dirty: &mut f32, cols: [Rect; 2]) ->
         toggle_setting(ui, s, dirty, c.row(), "Reflection maps (paint, chrome, glass)", "reflections");
     }
     toggle_setting(ui, s, dirty, c.row(), "Clouds", "clouds");
+    // (the enhanced graphics' volumetric clouds marched in fewer steps: see
+    // `Lighting::low_clouds`; the vanilla ones are a texture whatever this says)
+    if matches!(get(s, "graphics").as_str(), Some("enhanced" | "enhanced_plus")) && get(s, "clouds").as_bool() != Some(false) {
+        sel_setting(ui, s, dirty, "s-cloud-quality", c.row(), "Cloud quality", "cloud_quality", &[("high", "High"), ("low", "Low")]);
+    }
     toggle_setting(ui, s, dirty, c.row(), "Windy trees", "windy_trees");
     let left = c.used();
     let mut c = Col::new(ui, cols[1], "Display");
@@ -603,9 +604,10 @@ fn graphics_tab(ui: &mut Ui, s: &mut Value, dirty: &mut f32, cols: [Rect; 2]) ->
     toggle_setting(ui, s, dirty, c.row(), "V-sync", "vsync");
     sel_setting(ui, s, dirty, "s-fps", c.row(), "Frame limit", "max_fps", &[("0", "Screen refresh rate"), ("30", "30 fps"), ("45", "45 fps"), ("60", "60 fps"), ("120", "120 fps"), ("144", "144 fps"), ("1000", "Unlimited")]);
     // (a Mac has Metal only; elsewhere a driver's Vulkan that misbehaves, or a card without
-    // it, is got round here)
+    // it, is got round here; on Windows also OpenGL ES on ANGLE over DirectX 11, for a chip
+    // with none of the others - it is tried only when the package has ANGLE's DLLs)
     if cfg!(windows) {
-        sel_setting(ui, s, dirty, "s-api", c.row(), "Graphics API", "graphics_api", &[("auto", "Automatic"), ("vulkan", "Vulkan"), ("dx12", "DirectX 12"), ("gl", "OpenGL")]);
+        sel_setting(ui, s, dirty, "s-api", c.row(), "Graphics API", "graphics_api", &[("auto", "Automatic"), ("vulkan", "Vulkan"), ("dx12", "DirectX 12"), ("gl", "OpenGL"), ("angle", "ANGLE (DirectX 11)")]);
     } else if !cfg!(target_os = "macos") {
         sel_setting(ui, s, dirty, "s-api", c.row(), "Graphics API", "graphics_api", &[("auto", "Automatic"), ("vulkan", "Vulkan"), ("gl", "OpenGL")]);
     }
@@ -627,6 +629,9 @@ fn graphics_tab(ui: &mut Ui, s: &mut Value, dirty: &mut f32, cols: [Rect; 2]) ->
     let opts: Vec<(&str, &str)> = vec![("0", auto_label.as_str()), ("500", "500 MB"), ("1000", "1 GB"), ("1500", "1.5 GB"), ("2000", "2 GB"), ("3000", "3 GB"), ("4000", "4 GB"), ("6000", "6 GB")];
     sel_setting(ui, s, dirty, "s-texmem", c.row(), "Texture memory", "texture_memory", &opts);
     toggle_setting(ui, s, dirty, c.row(), "Compress textures on loading", "texture_compression");
+    // (off: DXT/BC textures decoded to RGBA on loading, for a driver that mishandles block
+    // formats - see `Settings::gpu_texture_compression`)
+    toggle_setting(ui, s, dirty, c.row(), "DXT/BC textures stay compressed on the GPU", "gpu_texture_compression");
     c.section(ui, "Profiles");
     graphics_profiles_block(ui, s, dirty, &mut c);
     [left, c.used()]
@@ -643,6 +648,28 @@ fn driving_tab(ui: &mut Ui, s: &mut Value, dirty: &mut f32, out: &mut Outside, c
     let mut ms = get(s, "mouse_sens").as_f64().unwrap_or(1.0) as f32;
     if ui.slider("s-mouse", c.row(), &mut ms, 0.1, 3.0, 0.05, "Mouse steering sensitivity (O)", &|v| if (v - 1.0).abs() < 0.01 { "OMSI".to_string() } else { format!("{:.0}%", v * 100.0) }) {
         s["mouse_sens"] = json!((ms * 100.0).round() / 100.0);
+        *dirty = 0.3;
+    }
+    let mut mouse_pedal = get(s, "mouse_pedal_strength")
+        .as_f64()
+        .unwrap_or(1.0) as f32;
+    if ui.slider(
+        "s-mouse-pedal",
+        c.row(),
+        &mut mouse_pedal,
+        0.5,
+        2.0,
+        0.05,
+        "Mouse pedal strength",
+        &|v| {
+            if (v - 1.0).abs() < 0.01 {
+                "OMSI".to_string()
+            } else {
+                format!("{:.0}%", v * 100.0)
+            }
+        },
+    ) {
+        s["mouse_pedal_strength"] = json!((mouse_pedal * 100.0).round() / 100.0);
         *dirty = 0.3;
     }
     toggle_setting(ui, s, dirty, c.row(), "Smooth mouse steering (off: the wheel follows the cursor at once, as in OMSI)", "mouse_smooth");
@@ -1063,6 +1090,8 @@ fn gameplay_tab(ui: &mut Ui, s: &mut Value, dirty: &mut f32, cols: [Rect; 2]) ->
     sel_setting(ui, s, dirty, "s-unsched", c.row(), "Random traffic", "ai_unsched_factor", &[("25", "25%"), ("50", "50%"), ("75", "75%"), ("100", "100%"), ("150", "150%"), ("200", "200%")]);
     sel_setting(ui, s, dirty, "s-maxsched", c.row(), "Timetable vehicles", "ai_max_scheduled", &[("0", "All"), ("10", "At most 10"), ("25", "At most 25"), ("50", "At most 50")]);
     sel_setting(ui, s, dirty, "s-maxpark", c.row(), "Parked cars", "ai_max_parked", &[("-1", "None"), ("0", "Every space"), ("35", "At most 35"), ("100", "At most 100"), ("250", "At most 250")]);
+    // (off: an early bus waits at every stop, as in OMSI)
+    toggle_setting(ui, s, dirty, c.row(), "Timetable buses ahead of time wait only at timed stops", "ai_wait_timed_stops_only");
     let left = c.used();
     // OMSI's own options (options.cfg)
     let mut c = Col::new(ui, cols[1], "Simulation");
@@ -1319,7 +1348,7 @@ pub fn controls(l: &mut Launcher, area: Rect) {
         } else if !matches!(code, K::ShiftLeft | K::ShiftRight | K::ControlLeft | K::ControlRight | K::AltLeft | K::AltRight | K::SuperLeft | K::SuperRight) {
             match crate::keys::dik_code(code) {
                 Some(scan) => {
-                    let m = omsi_content::input::chord(l.ui.input.shift, l.ui.input.ctrl, l.ui.input.alt) as i64;
+                    let m = l.ui.input.binding_modifiers() as i64;
                     let section = ["vehicles", "game"][sec];
                     let vr_binding = l.state.keybindings.get(section).and_then(|a| a.as_array())
                         .and_then(|a| a.get(idx)).and_then(|b| b.get("action"))
@@ -1337,6 +1366,7 @@ pub fn controls(l: &mut Launcher, area: Rect) {
             l.pages.capturing = None;
         }
         l.ui.input.raw_key = None;
+        l.ui.input.raw_chord = 0;
     }
     // The keys below are the ones the game uses only with "Custom controls" (Settings →
     // Driving keys); the ready-made layouts keep W A S D / the arrows for driving. Say so,
@@ -2574,6 +2604,26 @@ pub fn setup(l: &mut Launcher, area: Rect) {
             }
         }
     }
+    support_panel(l, Rect::new(body.x, r.bottom() + 16.0, body.w.min(820.0), 0.0));
+}
+
+/// Setup's support package (see `support_bundle`): what it holds, said before it is made,
+/// and the button that saves it on this computer (nothing is sent).
+fn support_panel(l: &mut Launcher, r: Rect) {
+    const ABOUT: &str = "A ZIP for a bug report: the program and system versions, the graphics card, its driver and the graphics settings, the controllers, and the map and bus of the last game. No folders, names, chat, LAN codes or addresses; of the logs only which events happened. It is saved on this computer and its folder opened, so you can look inside before you attach it to an issue.";
+    // (as high as its text needs: it wraps to more lines on a phone)
+    let r = Rect::new(r.x, r.y, r.w, 120.0 + l.ui.paragraph_height(ABOUT, r.w - 40.0, 12.5, Weight::Regular));
+    l.ui.panel(r);
+    let inner = l.ui.heading(Rect::new(r.x + 20.0, r.y + 16.0, r.w - 40.0, r.h - 32.0), "Support package", Some("help"));
+    let h = l.ui.paragraph(ABOUT, Vec2::new(inner.x, inner.y), inner.w, 12.5, Weight::Regular, TEXT_DIM);
+    if l.ui.button("export-diagnostics", Rect::new(inner.x, inner.y + h + 12.0, 220.0, 42.0), "Export diagnostics", Some("download"), ButtonKind::Normal) {
+        let c = &l.state.choice;
+        let snapshot = crate::support_bundle::snapshot(l.renderer.as_ref(), &crate::settings::Settings::load(),
+            l.pages.pads.io.as_ref().map(|d| d.connected()), Some((&c.map, Some(&c.bus), c.line.as_deref(), c.tour.as_deref())), "launcher_selection");
+        let out = crate::support_bundle::default_output();
+        l.state.spawn(move || super::state::Msg::Diagnostics(
+            crate::support_bundle::export(&out, &snapshot).map(|_| out).map_err(|e| format!("{e:#}"))));
+    }
 }
 
 
@@ -2738,14 +2788,14 @@ mod settings_tests {
     fn by_tab() -> Vec<Vec<&'static str>> {
         let mut graphics = vec![
             "s-gp-sel", "s-gp-load", "s-gp-del", "s-gp-name", "s-gp-save",
-            "s-preset", "s-graphics", "s-msaa", "s-scale", "s-af", "s-shadow", "set-ssao", "set-shadows", "s-casters", "set-detail_textures", "s-night", "s-led", "s-led-mip", "set-shadow_blobs", "set-reflections", "set-clouds", "set-windy_trees",
-            "set-fullscreen", "s-res", "set-vsync", "s-fps", "s-view", "s-maxobj", "s-minobj", "s-mirror", "s-mirror-refresh", "s-texmem", "set-texture_compression",
+            "s-preset", "s-graphics", "s-msaa", "s-scale", "s-af", "s-shadow", "set-ssao", "set-shadows", "s-casters", "set-detail_textures", "s-night", "s-led", "s-led-mip", "set-shadow_blobs", "set-reflections", "set-clouds", "s-cloud-quality", "set-windy_trees",
+            "set-fullscreen", "s-res", "set-vsync", "s-fps", "s-view", "s-maxobj", "s-minobj", "s-mirror", "s-mirror-refresh", "s-texmem", "set-texture_compression", "set-gpu_texture_compression",
         ];
         if !cfg!(target_os = "macos") {
             graphics.push("s-api");
         }
         let driving = vec![
-            "s-keys", "set-steering_linear", "set-old_steering", "set-red_steer_spd", "s-mouse", "set-mouse_smooth", "set-mouse_right_off", "set-blinker_cancel", "set-brake_hold", "set-auto_clutch", "set-auto_shift", "set-momentary_gears", "s-go-keys",
+            "s-keys", "set-steering_linear", "set-old_steering", "set-red_steer_spd", "s-mouse", "s-mouse-pedal", "set-mouse_smooth", "set-mouse_right_off", "set-blinker_cancel", "set-brake_hold", "set-auto_clutch", "set-auto_shift", "set-momentary_gears", "s-go-keys",
             "s-wrange", "s-wlock", "s-pad-steer-smooth", "set-pad_steer_linear", "set-arrows_switch_cams", "s-pedt", "s-pedb", "set-ff_enabled", "set-ff_invert", "s-ffroad", "s-ffeng", "s-fffade", "s-wreset", "s-go-pads",
         ];
         let mut camera = vec![
@@ -2792,7 +2842,7 @@ mod settings_tests {
         // (the radio stations: one, see `frame`)
         let sound = vec!["s-vol", "s-volai", "s-volsc", "set-doppler", "s-voices", "radio-name-0", "radio-url-0", "radio-del-0", "radio-add"];
         let gameplay = vec![
-            "s-board", "set-exact_fare", "s-pax", "set-get_up", "s-unsched", "s-maxsched", "s-maxpark",
+            "s-board", "set-exact_fare", "s-pax", "set-get_up", "s-unsched", "s-maxsched", "s-maxpark", "set-ai_wait_timed_stops_only",
             "s-maint", "set-collision_vehicles", "set-collision_objects", "set-collision_pedestrians", "set-use_real_time", "set-use_real_date", "set-time_sync", "set-metar_sync", "s-timespeed",
         ];
         let general = vec![
@@ -2860,6 +2910,22 @@ mod settings_tests {
             }
             assert_eq!(ui.drawn.len(), names.len(), "the {} tab has a clickable thing more than the list names", SETTINGS_TABS[tab]);
         }
+    }
+
+    /// The phone's stacked Graphics tab shows the cloud quality with Enhanced, and the
+    /// choice reaches the game's settings.
+    #[test]
+    fn stacked_graphics_tab_shows_and_saves_the_cloud_quality() {
+        let mut ui = Ui::new();
+        let mut s = all_rows();
+        let mut out = outside();
+        ui.begin(Vec2::new(430.0, 1600.0), 1.0, 1.0 / 60.0);
+        let mut dirty = 0.0;
+        settings_tab(&mut ui, 0, &mut s, &mut dirty, &mut out, [Rect::new(12.0, 0.0, 406.0, 760.0), Rect::new(12.0, 780.0, 406.0, 760.0)]);
+        assert!(ui.drawn.contains_key(&id_of("s-cloud-quality")));
+        s["cloud_quality"] = json!("low");
+        let saved = core::settings_to_text(&s, None);
+        assert_eq!(crate::settings::Settings::from_text(&saved).cloud_quality, "low");
     }
 
     #[test]
