@@ -26817,7 +26817,7 @@ _version: 2
   pt-pt: "Caixa manual automatizada (muda de velocidade conforme a rotação do motor)"
   nl: "Geautomatiseerde handgeschakelde versnellingsbak (schakelt op basis van het motortoerental)"
 "Stick steers like a wheel (a wheel seen as a gamepad)":
-  de: "Stick lenkt wie ein Lenkrad (Lenkrad wird als Gamepad erkannt)"
+  de: "Stick verhält sich wie ein Lenkrad (Lenkrad wird als Gamepad erkannt)"
   pt: "Analógico dirige como volante (volante detectado como controle)"
   pt-pt: "Manípulo dirige como volante (volante detetado como comando)"
   fr: "Le stick dirige comme un volant (un volant vu comme une manette)"
