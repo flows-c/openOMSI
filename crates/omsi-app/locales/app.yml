@@ -103,14 +103,14 @@ _version: 2
   zh: "在游戏过程中告诉我有新版本"
   de: "Informiere mich während einer Sitzung über eine neue Version"
   nl: "Meld nieuwe versies tijdens het spelen"
-'Count me in the website''s "playing now" (anonymous)':
+"Count me in the website's \"playing now\" (anonymous)":
   fr: "Me compter dans les « en jeu maintenant » du site (anonyme)"
   ca: "Compta'm a «jugant ara» del web (anònim)"
   zh-tw: "將我計入網站的「目前遊玩人數」（匿名）"
-  pt: 'Incluir-me no "jogando agora" do site (anônimo)'
-  pt-pt: 'Incluir-me no "a jogar agora" do site (anónimo)'
+  pt: "Incluir-me no \"jogando agora\" do site (anônimo)"
+  pt-pt: "Incluir-me no \"a jogar agora\" do site (anónimo)"
   zh: "将我计入网站的“正在游玩”人数（匿名）"
-  de: 'Mich zu "Spielen aktuell" auf der Website dazuzählen (anonym)'
+  de: "Mich zu \"Spielen aktuell\" auf der Website dazuzählen (anonym)"
   nl: "Mij anoniem meetellen bij 'nu aan het spelen' op de website"
 "Radio stations":
   fr: "Stations de radio"
@@ -10679,26 +10679,26 @@ _version: 2
   zh: "这里没有空座:请站在巴士车门旁"
   hi: "यहाँ कोई खाली सीट नहीं: बस के दरवाज़े के पास खड़े हों"
   zh-tw: "此處沒有空位：請站在巴士車門旁"
-'Getting up is off: turn on "Ability to get up" in the settings':
+"Getting up is off: turn on \"Ability to get up\" in the settings":
   ca: "L'opció d'aixecar-se està desactivada: activa «Permet aixecar-se» a la configuració"
   ru: "Вставать нельзя: включите «Возможность встать» в настройках"
-  de: 'Aufstehen ist aus: schalte "Aufstehen möglich" in den Einstellungen ein'
+  de: "Aufstehen ist aus: schalte \"Aufstehen möglich\" in den Einstellungen ein"
   fr: "Se lever est impossible : activez « Pouvoir se lever » dans les paramètres"
   uk: "Вставати заборонено: увімкніть «Можливість вставати» в налаштуваннях"
   be: "Уставаць забаронена: уключыце «Магчымасць уставаць» у наладах"
-  kk: 'Тұру өшірулі: баптауларда "Тұру мүмкіндігі" қосыңыз'
-  pl: 'Wstawanie wyłączone: włącz "Możliwość wstania" w ustawieniach'
-  cs: 'Vstávání je vypnuto: zapněte "Možnost vstát" v nastavení'
-  hu: 'A felállás ki van kapcsolva: kapcsold be a „Felállás lehetősége" beállítást'
-  es: 'Levantarse está desactivado: activa "Poder levantarse" en los ajustes'
-  pt: 'Levantar-se está desligado: ative "Poder levantar-se" nas configurações'
-  pt-pt: 'Levantar-se está desligado: ative "Poder levantar-se" nas definições'
-  it: 'Alzarsi è disattivato: attiva "Possibilità di alzarsi" nelle impostazioni'
-  nl: 'Opstaan is uitgeschakeld: zet "Opstaan mogelijk" aan in de instellingen'
-  tr: 'Ayağa kalkma kapalı: ayarlarda "Ayağa kalkabilme"yi açın'
+  kk: "Тұру өшірулі: баптауларда \"Тұру мүмкіндігі\" қосыңыз"
+  pl: "Wstawanie wyłączone: włącz \"Możliwość wstania\" w ustawieniach"
+  cs: "Vstávání je vypnuto: zapněte \"Možnost vstát\" v nastavení"
+  hu: "A felállás ki van kapcsolva: kapcsold be a „Felállás lehetősége\" beállítást"
+  es: "Levantarse está desactivado: activa \"Poder levantarse\" en los ajustes"
+  pt: "Levantar-se está desligado: ative \"Poder levantar-se\" nas configurações"
+  pt-pt: "Levantar-se está desligado: ative \"Poder levantar-se\" nas definições"
+  it: "Alzarsi è disattivato: attiva \"Possibilità di alzarsi\" nelle impostazioni"
+  nl: "Opstaan is uitgeschakeld: zet \"Opstaan mogelijk\" aan in de instellingen"
+  tr: "Ayağa kalkma kapalı: ayarlarda \"Ayağa kalkabilme\"yi açın"
   ja: "立ち上がりがオフです:設定で「立ち上がり機能」をオンにしてください"
   zh: "起身已关闭:请在设置中开启“起身功能”"
-  hi: 'उठना बंद है: सेटिंग्स में "उठ पाने की सुविधा" चालू करें'
+  hi: "उठना बंद है: सेटिंग्स में \"उठ पाने की सुविधा\" चालू करें"
   zh-tw: "離座功能已關閉：請在設定中開啟「允許起身」"
 "go to":
   ca: "ves a"
@@ -26117,13 +26117,13 @@ _version: 2
   pt-pt: "Tamanho da janela"
   zh: "窗口大小"
   nl: "Venstergrootte"
-'Press "Reset timetable" again to put the map''s own timetable back (the changes made here are lost)':
+"Press \"Reset timetable\" again to put the map's own timetable back (the changes made here are lost)":
   ca: "Torna a prémer «Restableix l'horari» per recuperar l'horari original del mapa (es perdran els canvis fets aquí)"
   fr: "Appuyez de nouveau sur « Réinitialiser l'horaire » pour remettre l'horaire de la carte (les modifications faites ici sont perdues)"
   zh-tw: "再次按下「重設時刻表」以恢復地圖自己的時刻表（此處所做的變更將會遺失）"
 
-  pt: 'Pressione "Redefinir tabela horária" novamente para restaurar a tabela horária original do mapa (as alterações feitas aqui serão perdidas)'
-  pt-pt: 'Prima "Redefinir horário" novamente para restaurar o horário original do mapa (as alterações feitas aqui serão perdidas)'
+  pt: "Pressione \"Redefinir tabela horária\" novamente para restaurar a tabela horária original do mapa (as alterações feitas aqui serão perdidas)"
+  pt-pt: "Prima \"Redefinir horário\" novamente para restaurar o horário original do mapa (as alterações feitas aqui serão perdidas)"
   zh: "再次按“重置时刻表”以恢复地图自己的时刻表（此处的更改将丢失）"
   nl: "Klik opnieuw op 'Dienstregeling herstellen' om de oorspronkelijke dienstregeling van de kaart terug te zetten (de wijzigingen hier gaan verloren)"
 "Enter takes the first match":
@@ -27387,12 +27387,12 @@ _version: 2
 "Press a button on {name} (Esc cancels)":
   fr: "Appuyez sur un bouton de {name} (Échap annule)"
 
-'Graphics profile "{name}" loaded: graphics settings apply when the game starts the next time':
-  de: 'Grafikprofil "{name}" geladen: Grafikeinstellungen werden nach einem Neustart angewendet'
+"Graphics profile \"{name}\" loaded: graphics settings apply when the game starts the next time":
+  de: "Grafikprofil \"{name}\" geladen: Grafikeinstellungen werden nach einem Neustart angewendet"
   fr: "Profil graphique « {name} » chargé : les réglages graphiques s'appliquent au prochain lancement du jeu"
 
-'Graphics profile "{name}" not found':
-  de: 'Grafikprofil "{name}" nicht gefunden'
+"Graphics profile \"{name}\" not found":
+  de: "Grafikprofil \"{name}\" nicht gefunden"
   fr: "Profil graphique « {name} » introuvable"
 
 "Line {line}, tour {}":
@@ -27455,16 +27455,16 @@ _version: 2
   de: "Fahrer {name} erstellt."
   fr: "Conducteur {name} créé."
 
-'Loaded "{name}".':
-  de: '"{name}" geladen.'
+"Loaded \"{name}\".":
+  de: "\"{name}\" geladen."
   fr: "« {name} » chargé."
 
-'Deleted "{name}".':
-  de: '"{name}" gelöscht.'
+"Deleted \"{name}\".":
+  de: "\"{name}\" gelöscht."
   fr: "« {name} » supprimé."
 
-'Saved "{name}".':
-  de: '"{name}" gespeichert.'
+"Saved \"{name}\".":
+  de: "\"{name}\" gespeichert."
   fr: "« {name} » enregistré."
 
 "Automatic ({} here)":
@@ -27479,8 +27479,8 @@ _version: 2
   de: "Driving keys: {name} (Einstellungen). Diese Tasten können zum Fahren des Busses genutzt werden und haben eine höhere Priorität als die Liste unten. Passe beliebige Tasten hier an und dein eigenes Layout (benutzerdefinierte Steuerung) wird ab dann genutzt."
   fr: "Touches de conduite : {name} (Paramètres). Ces touches conduisent le bus et l'emportent sur la liste ci-dessous. Changez une touche ici et votre propre disposition (Commandes personnalisées) est utilisée dès lors."
 
-'Add "{new_action}" and give it a key':
-  de: 'Füge "{new_action}" hinzu und weise eine Taste zu'
+"Add \"{new_action}\" and give it a key":
+  de: "Füge \"{new_action}\" hinzu und weise eine Taste zu"
   fr: "Ajouter « {new_action} » et lui donner une touche"
 
 "Anything put into {} is installed by itself once it has finished copying.":
