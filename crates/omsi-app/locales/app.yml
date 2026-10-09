@@ -24156,6 +24156,7 @@ _version: 2
 
 "The air temperature.":
   ca: "Temperatura de l'aire."
+  de: "Die Lufttemperatur."
   pt: "Temperatura do ar."
   pt-pt: "Temperatura do ar."
   zh: "空气温度"
@@ -24177,6 +24178,7 @@ _version: 2
 
 "How fast the wind blows; it drives the clouds.":
   ca: "Velocitat del vent, que desplaça els núvols."
+  de: "Wie stark der Wind weht; sorgt für Bewegung der Wolken."
   pt: "Velocidade do vento; ele move as nuvens."
   pt-pt: "Velocidade do vento; ele move as nuvens."
   zh: "风吹得多快，它影响着云移动"
@@ -24198,6 +24200,7 @@ _version: 2
 
 "The direction of the wind in degrees (0 is north).":
   ca: "Direcció del vent en graus (0 és el nord)."
+  de: "Die Richtung des Windes in Grad (0 ist Norden)."
   pt: "Direção do vento em graus (0 é norte)."
   pt-pt: "Direção do vento em graus (0 é norte)."
   zh: "风的方向，单位为度（0度表示北）"
@@ -24208,6 +24211,7 @@ _version: 2
 
 "Open":
   ca: "Obre"
+  de: "Öffnen"
   pt: "Abrir"
   pt-pt: "Abrir"
   zh: "打开"
@@ -24228,6 +24232,7 @@ _version: 2
 
 "How many vehicles drive around the map.":
   ca: "Quantitat de vehicles que circulen pel mapa."
+  de: "Wie viele Fahrzeuge auf der Karte herumfahren."
   pt: "Quantidade de veículos circulando pelo mapa."
   pt-pt: "Quantidade de veículos a circular pelo mapa."
   zh: "在地图上行驶的车辆数量。"
@@ -24238,6 +24243,7 @@ _version: 2
 
 "How many passengers wait at the stops and ride.":
   ca: "Quantitat de passatgers que esperen a les parades i viatgen."
+  de: "Wie viele Passagiere an den Haltestellen warten und mitfahren."
   pt: "Quantidade de passageiros esperando nas paradas e viajando."
   pt-pt: "Quantidade de passageiros à espera nas paragens e a viajar."
   zh: "在站点候车和乘车的乘客数量。"
@@ -24248,6 +24254,7 @@ _version: 2
 
 "Vehicle settings":
   ca: "Configuració del vehicle"
+  de: "Fahrzeug-Einstellungen"
   pt: "Configurações do veículo"
   pt-pt: "Definições do veículo"
   zh: "车辆设置"
@@ -24258,6 +24265,7 @@ _version: 2
 
 "Roadbook and IBIS":
   ca: "Full de ruta i IBIS"
+  de: "Fahrplan und IBIS"
   pt: "Itinerário e IBIS"
   pt-pt: "Itinerário e IBIS"
   zh: "行车手册与 IBIS"
@@ -24268,6 +24276,7 @@ _version: 2
 
 "Start options":
   ca: "Opcions d'inici"
+  de: "Startoptionen"
   pt: "Opções de início"
   pt-pt: "Opções de início"
   zh: "选项"
@@ -24278,6 +24287,7 @@ _version: 2
 
 "Saved servers":
   ca: "Servidors desats"
+  de: "Gespeicherte Server"
   pt: "Servidores salvos"
   pt-pt: "Servidores guardados"
   zh: "已保存的服务器"
@@ -24288,6 +24298,7 @@ _version: 2
 
 "Season":
   ca: "Estació de l'any"
+  de: "Jahreszeit"
   pt: "Estação"
   pt-pt: "Estação"
   zh: "季节"
@@ -24298,6 +24309,7 @@ _version: 2
 
 "Choose a line and a tour to see the roadbook and the IBIS codes.":
   ca: "Tria una línia i un torn per veure el full de ruta i els codis de l'IBIS."
+  de: "Wähle eine Linie und einen Kurs um den Fahrplan und die IBIS-Codes zu sehen."
   pt: "Escolha uma linha e um serviço para ver o itinerário e os códigos do IBIS."
   pt-pt: "Escolha uma linha e um serviço para ver o itinerário e os códigos do IBIS."
   zh: "选择线路和行程以查看行车手册和 IBIS 代码。"
@@ -24308,6 +24320,7 @@ _version: 2
 
 "No saved servers yet.":
   ca: "Encara no hi ha servidors desats."
+  de: "Noch keine Server gespeichert."
   pt: "Ainda não há servidores salvos."
   pt-pt: "Ainda não há servidores guardados."
   zh: "还没有已保存的服务器。"
@@ -24318,6 +24331,7 @@ _version: 2
 
 "Manage saved servers":
   ca: "Gestiona els servidors desats"
+  de: "Gespeicherte Server verwalten"
   pt: "Gerenciar servidores salvos"
   pt-pt: "Gerir servidores guardados"
   zh: "管理已保存的服务器"
@@ -24328,6 +24342,7 @@ _version: 2
 
 "No saved servers yet. Add one with Manage saved servers above.":
   ca: "Encara no hi ha servidors desats. Afegeix-ne un amb Gestiona els servidors desats, més amunt."
+  de: "Noch keine Server gespeichert. Füge welche mit 'Gespeicherte Server verwalten' oben hinzu."
   pt: "Ainda não há servidores salvos. Adicione um em Gerenciar servidores salvos acima."
   pt-pt: "Ainda não há servidores guardados. Adicione um em Gerir servidores guardados acima."
   zh: "还没有已保存的服务器。请在上方“管理已保存的服务器”中添加。"
@@ -24338,6 +24353,7 @@ _version: 2
 
 "Type the server's address first":
   ca: "Introdueix primer l'adreça del servidor"
+  de: "Zuerst Serveradresse eingeben"
   pt: "Digite primeiro o endereço do servidor"
   pt-pt: "Introduza primeiro o endereço do servidor"
   zh: "请先输入服务器地址"
@@ -24348,6 +24364,7 @@ _version: 2
 
 "Traffic, passengers and the world's clock are set by the server.":
   ca: "El servidor estableix el trànsit, els passatgers i el rellotge del món."
+  de: "Verkehr, Passagiere und die Uhrzeit der Welt werden vom Server gesetzt."
   pt: "O tráfego, os passageiros e o relógio do mundo são definidos pelo servidor."
   pt-pt: "O tráfego, os passageiros e o relógio do mundo são definidos pelo servidor."
   zh: "交通、乘客和世界时钟由服务器设定。"
