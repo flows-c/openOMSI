@@ -103,14 +103,14 @@ _version: 2
   zh: "在游戏过程中告诉我有新版本"
   de: "Informiere mich während einer Sitzung über eine neue Version"
   nl: "Meld nieuwe versies tijdens het spelen"
-"Count me in the website's \"playing now\" (anonymous)":
+'Count me in the website''s "playing now" (anonymous)':
   fr: "Me compter dans les « en jeu maintenant » du site (anonyme)"
   ca: "Compta'm a «jugant ara» del web (anònim)"
   zh-tw: "將我計入網站的「目前遊玩人數」（匿名）"
-  pt: "Incluir-me no \"jogando agora\" do site (anônimo)"
-  pt-pt: "Incluir-me no \"a jogar agora\" do site (anónimo)"
+  pt: 'Incluir-me no "jogando agora" do site (anônimo)'
+  pt-pt: 'Incluir-me no "a jogar agora" do site (anónimo)'
   zh: "将我计入网站的“正在游玩”人数（匿名）"
-  de: "Mich zu \"Spielen aktuell\" auf der Website dazuzählen (anonym)"
+  de: 'Mich zu "Spielen aktuell" auf der Website dazuzählen (anonym)'
   nl: "Mij anoniem meetellen bij 'nu aan het spelen' op de website"
 "Radio stations":
   fr: "Stations de radio"
@@ -10679,26 +10679,26 @@ _version: 2
   zh: "这里没有空座:请站在巴士车门旁"
   hi: "यहाँ कोई खाली सीट नहीं: बस के दरवाज़े के पास खड़े हों"
   zh-tw: "此處沒有空位：請站在巴士車門旁"
-"Getting up is off: turn on \"Ability to get up\" in the settings":
+'Getting up is off: turn on "Ability to get up" in the settings':
   ca: "L'opció d'aixecar-se està desactivada: activa «Permet aixecar-se» a la configuració"
   ru: "Вставать нельзя: включите «Возможность встать» в настройках"
-  de: "Aufstehen ist aus: schalte \"Aufstehen möglich\" in den Einstellungen ein"
+  de: 'Aufstehen ist aus: schalte "Aufstehen möglich" in den Einstellungen ein'
   fr: "Se lever est impossible : activez « Pouvoir se lever » dans les paramètres"
   uk: "Вставати заборонено: увімкніть «Можливість вставати» в налаштуваннях"
   be: "Уставаць забаронена: уключыце «Магчымасць уставаць» у наладах"
-  kk: "Тұру өшірулі: баптауларда \"Тұру мүмкіндігі\" қосыңыз"
-  pl: "Wstawanie wyłączone: włącz \"Możliwość wstania\" w ustawieniach"
-  cs: "Vstávání je vypnuto: zapněte \"Možnost vstát\" v nastavení"
-  hu: "A felállás ki van kapcsolva: kapcsold be a „Felállás lehetősége\" beállítást"
-  es: "Levantarse está desactivado: activa \"Poder levantarse\" en los ajustes"
-  pt: "Levantar-se está desligado: ative \"Poder levantar-se\" nas configurações"
-  pt-pt: "Levantar-se está desligado: ative \"Poder levantar-se\" nas definições"
-  it: "Alzarsi è disattivato: attiva \"Possibilità di alzarsi\" nelle impostazioni"
-  nl: "Opstaan is uitgeschakeld: zet \"Opstaan mogelijk\" aan in de instellingen"
-  tr: "Ayağa kalkma kapalı: ayarlarda \"Ayağa kalkabilme\"yi açın"
+  kk: 'Тұру өшірулі: баптауларда "Тұру мүмкіндігі" қосыңыз'
+  pl: 'Wstawanie wyłączone: włącz "Możliwość wstania" w ustawieniach'
+  cs: 'Vstávání je vypnuto: zapněte "Možnost vstát" v nastavení'
+  hu: 'A felállás ki van kapcsolva: kapcsold be a „Felállás lehetősége" beállítást'
+  es: 'Levantarse está desactivado: activa "Poder levantarse" en los ajustes'
+  pt: 'Levantar-se está desligado: ative "Poder levantar-se" nas configurações'
+  pt-pt: 'Levantar-se está desligado: ative "Poder levantar-se" nas definições'
+  it: 'Alzarsi è disattivato: attiva "Possibilità di alzarsi" nelle impostazioni'
+  nl: 'Opstaan is uitgeschakeld: zet "Opstaan mogelijk" aan in de instellingen'
+  tr: 'Ayağa kalkma kapalı: ayarlarda "Ayağa kalkabilme"yi açın'
   ja: "立ち上がりがオフです:設定で「立ち上がり機能」をオンにしてください"
   zh: "起身已关闭:请在设置中开启“起身功能”"
-  hi: "उठना बंद है: सेटिंग्स में \"उठ पाने की सुविधा\" चालू करें"
+  hi: 'उठना बंद है: सेटिंग्स में "उठ पाने की सुविधा" चालू करें'
   zh-tw: "離座功能已關閉：請在設定中開啟「允許起身」"
 "go to":
   ca: "ves a"
@@ -22582,6 +22582,7 @@ _version: 2
 
 "The game is running":
   ca: "El joc està en marxa"
+  de: "Das Spiel läuft gerade"
   pt: "O jogo está em execução"
   pt-pt: "O jogo está em execução"
   zh: "游戏运行中"
@@ -22602,6 +22603,7 @@ _version: 2
 
 "Saved profile":
   ca: "Perfil desat"
+  de: "Gespeichertes Profil"
   pt: "Perfil salvo"
   pt-pt: "Perfil guardado"
   zh: "已保存的预设方案"
@@ -22612,6 +22614,7 @@ _version: 2
 
 "Load":
   ca: "Carrega"
+  de: "Laden"
   pt: "Carregar"
   pt-pt: "Carregar"
   zh: "加载"
@@ -22622,6 +22625,7 @@ _version: 2
 
 "Profile name":
   ca: "Nom del perfil"
+  de: "Profilname"
   pt: "Nome do perfil"
   pt-pt: "Nome do perfil"
   zh: "预设方案名称"
@@ -22632,6 +22636,7 @@ _version: 2
 
 "Save current graphics as profile":
   ca: "Desa els gràfics actuals com a perfil"
+  de: "Aktuelles Grafikprofil speichern"
   pt: "Salvar os gráficos atuais como perfil"
   pt-pt: "Guardar os gráficos atuais como perfil"
   zh: "将当前画质保存为预设方案"
@@ -22642,6 +22647,7 @@ _version: 2
 
 "OMSI's shadow meshes (under vehicles)":
   ca: "Malles d'ombra d'OMSI (sota els vehicles)"
+  de: OMSI's Schatten Meshes (unter Fahrzeug)
   pt: "Malhas de sombra do OMSI (sob os veículos)"
   pt-pt: "Malhas de sombra do OMSI (sob os veículos)"
   zh: "OMSI 的阴影网格(车辆下方)"
@@ -24055,6 +24061,7 @@ _version: 2
 
 "Visibility":
   ca: "Visibilitat"
+  de: "Sichtweite"
   pt: "Visibilidade"
   pt-pt: "Visibilidade"
   zh: "能见度"
@@ -24075,6 +24082,7 @@ _version: 2
 
 "Precipitation":
   ca: "Precipitació"
+  de: "Niederschlag"
   pt: "Precipitação"
   pt-pt: "Precipitação"
   zh: "降水"
@@ -24085,6 +24093,7 @@ _version: 2
 
 "Rain or snow.":
   ca: "Pluja o neu."
+  de: "Regen oder Schnee."
   pt: "Chuva ou neve."
   pt-pt: "Chuva ou neve."
   zh: "雨或雪"
@@ -24095,6 +24104,7 @@ _version: 2
 
 "Precipitation strength":
   ca: "Intensitat de la precipitació"
+  de: "Niederschlagsstärke"
   pt: "Intensidade da precipitação"
   pt-pt: "Intensidade da precipitação"
   zh: "降水强度"
@@ -24135,6 +24145,7 @@ _version: 2
 
 "Temperature":
   ca: "Temperatura"
+  de: "Temperatur"
   pt: "Temperatura"
   pt-pt: "Temperatura"
   zh: "温度"
@@ -24155,6 +24166,7 @@ _version: 2
 
 "Wind speed":
   ca: "Velocitat del vent"
+  de: "Windgeschwindigkeit"
   pt: "Velocidade do vento"
   pt-pt: "Velocidade do vento"
   zh: "风速"
@@ -24175,6 +24187,7 @@ _version: 2
 
 "Wind direction":
   ca: "Direcció del vent"
+  de: "Windrichtung"
   pt: "Direção do vento"
   pt-pt: "Direção do vento"
   zh: "风向"
@@ -25207,6 +25220,7 @@ _version: 2
   nl: "Station"
 "The launcher rests while a game runs":
   ca: "El launcher queda en repòs mentre hi ha una partida en marxa"
+  de: "Der Launcher ist pausiert während das Spiel läuft"
   fr: "Le lanceur se met en arrière plan pendant une partie"
   zh-tw: "啟動器在遊戲執行時暫停"
 
@@ -25216,6 +25230,7 @@ _version: 2
   nl: "De launcher pauzeert terwijl een spel draait"
 "The launcher rests while you drive, so that the game has the graphics card to itself. It is back as soon as the game ends.":
   ca: "El launcher queda en repòs mentre condueixes perquè el joc tingui la targeta gràfica en exclusiva. Es reprèn tan bon punt acaba la partida."
+  de: "Der Launcher ist während der Fahrt pausiert, sodass das Spiel die Grafikkarte voll nutzen kann. Sobald das Spiel beendet ist, wird er wieder aktiviert"
   fr: "Le lanceur se met en arrière plan pendant que vous conduisez, pour dédier la carte graphique au moteur de jeu. Il se rétablit dès la fin de la partie."
   zh-tw: "駕駛時啟動器會暫停，讓遊戲獨佔顯示卡；遊戲結束後啟動器會立即恢復。"
 
@@ -25935,6 +25950,7 @@ _version: 2
   nl: "Taal van de spelinterface"
 "The launcher rests while a game runs (gives the graphics card to the game)":
   ca: "El launcher queda en repòs mentre hi ha una partida (cedeix la targeta gràfica al joc)"
+  de: "Der Launcher ist pausiert während ein Spiel läuft (Spiel kann Grafikkarte voll nutzen)"
   fr: "Le lanceur se met en pause pendant une partie (laisse la carte graphique au jeu)"
   zh-tw: "遊戲運行時啟動器休息（提供遊戲顯示卡）"
 
@@ -26084,13 +26100,13 @@ _version: 2
   pt-pt: "Tamanho da janela"
   zh: "窗口大小"
   nl: "Venstergrootte"
-"Press \"Reset timetable\" again to put the map's own timetable back (the changes made here are lost)":
+'Press "Reset timetable" again to put the map''s own timetable back (the changes made here are lost)':
   ca: "Torna a prémer «Restableix l'horari» per recuperar l'horari original del mapa (es perdran els canvis fets aquí)"
   fr: "Appuyez de nouveau sur « Réinitialiser l'horaire » pour remettre l'horaire de la carte (les modifications faites ici sont perdues)"
   zh-tw: "再次按下「重設時刻表」以恢復地圖自己的時刻表（此處所做的變更將會遺失）"
 
-  pt: "Pressione \"Redefinir tabela horária\" novamente para restaurar a tabela horária original do mapa (as alterações feitas aqui serão perdidas)"
-  pt-pt: "Prima \"Redefinir horário\" novamente para restaurar o horário original do mapa (as alterações feitas aqui serão perdidas)"
+  pt: 'Pressione "Redefinir tabela horária" novamente para restaurar a tabela horária original do mapa (as alterações feitas aqui serão perdidas)'
+  pt-pt: 'Prima "Redefinir horário" novamente para restaurar o horário original do mapa (as alterações feitas aqui serão perdidas)'
   zh: "再次按“重置时刻表”以恢复地图自己的时刻表（此处的更改将丢失）"
   nl: "Klik opnieuw op 'Dienstregeling herstellen' om de oorspronkelijke dienstregeling van de kaart terug te zetten (de wijzigingen hier gaan verloren)"
 "Enter takes the first match":
@@ -26737,86 +26753,106 @@ _version: 2
   ms: "Akhir"
   tl: "Huli"
 "Support package":
+  de: "Support-Paket"
   pt: "Pacote de diagnóstico"
   pt-pt: "Pacote de diagnóstico"
   nl: "Ondersteuningspakket"
 "A ZIP for a bug report: the program and system versions, the graphics card, its driver and the graphics settings, the controllers, and the map and bus of the last game. No folders, names, chat, LAN codes or addresses; of the logs only which events happened. It is saved on this computer and its folder opened, so you can look inside before you attach it to an issue.":
+  de: "Eine ZIP zum Melden eines Fehlers: Die Programm- und Systemversion, die Grafikkarte, ihr Treiber und die Grafikeinstellungen, die Eingabegeräte und die Karte sowie der Bus von der letzten Fahrt. Keine Ordner, Namen, Chats, LAN-Codes oder Adressen; Logs welche Ereignisse passiert sind. Wird Lokal auf dem PC gespeichert und danach öffnet sich der Speicherort, sodass du vor dem Anhängen an ein Ticket nochmal hineinschauen kannst."
   pt: "Um ZIP para um relato de erro: as versões do programa e do sistema, a placa de vídeo, seu driver e as configurações gráficas, os controles, e o mapa e o ônibus do último jogo. Nenhuma pasta, nome, chat, código de LAN ou endereço; dos logs, apenas quais eventos aconteceram. Ele é salvo neste computador e a pasta é aberta, para que você confira o conteúdo antes de anexá-lo a um relato."
   pt-pt: "Um ZIP para um relatório de erro: as versões do programa e do sistema, a placa gráfica, o respetivo controlador e as definições gráficas, os comandos, e o mapa e o autocarro do último jogo. Nenhuma pasta, nome, chat, código de LAN ou endereço; dos registos, apenas que eventos ocorreram. É guardado neste computador e a pasta é aberta, para que possa ver o conteúdo antes de o anexar a um relatório."
   nl: "Een ZIP-bestand voor een bugmelding met programma- en systeemversies, grafische kaart, stuurprogramma en grafische instellingen, controllers en de kaart en bus van het laatste spel. Geen mappen, namen, chat, LAN-codes of adressen; van de logboeken alleen welke gebeurtenissen plaatsvonden. Het bestand wordt lokaal opgeslagen en de map wordt geopend, zodat je het kunt controleren voordat je het aan een issue toevoegt."
 "Export diagnostics":
+  de: "Diagnosedaten exportieren"
   pt: "Exportar diagnóstico"
   pt-pt: "Exportar diagnóstico"
   nl: "Diagnostische gegevens exporteren"
 "Support package saved: {}":
+  de: "Support-Paket gespeichert: {}"
   pt: "Pacote de diagnóstico salvo: {}"
   pt-pt: "Pacote de diagnóstico guardado: {}"
   nl: "Ondersteuningspakket opgeslagen: {}"
 "Could not export diagnostics: {why}":
+  de: "Diagnosedaten konnten nicht exportiert werden: {why}"
   pt: "Não foi possível exportar o diagnóstico: {why}"
   pt-pt: "Não foi possível exportar o diagnóstico: {why}"
   nl: "Kan diagnostische gegevens niet exporteren: {why}"
 "Join via":
+  de: "Beitreten via"
   pt: "Conectar via"
   pt-pt: "Ligar através de"
   fr: "Via"
   nl: "Deelnemen via"
 "8x MSAA":
+  de: "8x MSAA"
   pt: "MSAA 8x"
   pt-pt: "MSAA 8x"
   nl: "8x MSAA"
 "Windy trees":
+  de: "Wind beeinflusst Bäume"
   pt: "Árvores ao vento"
   pt-pt: "Árvores ao vento"
   fr: "Arbres dans le vent"
   nl: "Bomen bewegen in de wind"
 "Automated manual gearbox (shifts a manual gearbox for you by the engine speed)":
+  de: "Automatisiertes manuelles Getriebe (Schaltet manuelle Getriebe für dich nach der Motordrehzahl)"
   pt: "Câmbio manual automatizado (troca as marchas conforme a rotação do motor)"
   pt-pt: "Caixa manual automatizada (muda de velocidade conforme a rotação do motor)"
   nl: "Geautomatiseerde handgeschakelde versnellingsbak (schakelt op basis van het motortoerental)"
 "Stick steers like a wheel (a wheel seen as a gamepad)":
+  de: "Stick lenkt wie ein Lenkrad (Lenkrad wird als Gamepad erkannt)"
   pt: "Analógico dirige como volante (volante detectado como controle)"
   pt-pt: "Manípulo dirige como volante (volante detetado como comando)"
   fr: "Le stick dirige comme un volant (un volant vu comme une manette)"
   nl: "Stick stuurt als een stuurwiel (stuur herkend als gamepad)"
 "Arrow keys switch the cameras with a wheel too (no glance)":
+  de: "Pfeiltasten schalten auch bei angeschlossenem Lenkrad durch die Kameras (kein Umschauen)"
   pt: "Setas também trocam as câmeras ao usar volante (sem olhar para os lados)"
   pt-pt: "As setas também mudam de câmara ao usar um volante (sem olhar para os lados)"
   fr: "Les flèches changent de caméra aussi avec un volant (sans coup d'œil)"
   nl: "Pijltjestoetsen wisselen ook met een stuur tussen camera's (zonder zijwaarts kijken)"
 "Head tracking (native TrackIR / OpenTrack)":
+  de: "Head-Tracking (natives TrackIR / OpenTrack)"
   pt: "Rastreamento da cabeça (TrackIR nativo / OpenTrack)"
   pt-pt: "Seguimento da cabeça (TrackIR nativo / OpenTrack)"
   nl: "Hoofdtracking (native TrackIR / OpenTrack)"
 "Invert yaw":
+  de: "Gieren invertieren"
   pt: "Inverter rotação horizontal"
   pt-pt: "Inverter rotação horizontal"
   nl: "Gierhoek omkeren"
 "Invert pitch":
+  de: "Neigung invertieren"
   pt: "Inverter inclinação vertical"
   pt-pt: "Inverter inclinação vertical"
   nl: "Kantelhoek omkeren"
 "Invert roll":
+  de: "Rollen invertieren"
   pt: "Inverter inclinação lateral"
   pt-pt: "Inverter inclinação lateral"
   nl: "Rolhoek omkeren"
 "Invert X":
+  de: "X invertieren"
   pt: "Inverter X"
   pt-pt: "Inverter X"
   nl: "X omkeren"
 "Invert Y":
+  de: "Y invertieren"
   pt: "Inverter Y"
   pt-pt: "Inverter Y"
   nl: "Y omkeren"
 "Invert Z":
+  de: "Z invertieren"
   pt: "Inverter Z"
   pt-pt: "Inverter Z"
   nl: "Z omkeren"
 "Reset head-tracking axes":
+  de: "Head-Tracking Achsen zurücksetzen"
   pt: "Redefinir eixos do rastreamento da cabeça"
   pt-pt: "Repor eixos do seguimento da cabeça"
   nl: "Assen van hoofdtracking herstellen"
 "Add a station":
+  de: "Haltestelle hinzufügen"
   pt: "Adicionar uma parada"
   pt-pt: "Adicionar uma paragem"
   fr: "Ajouter une station"
@@ -27278,12 +27314,14 @@ _version: 2
   fr: "La radio du bus est éteinte (allumez-la dans le poste de conduite)"
 
 "No clouds":
+  de: "Keine Wolken"
   fr: "Aucun nuage"
 
 "Graphics driver is slow ({upload:.0} MB/s): the game will stutter. Restarting the computer usually fixes it.":
   fr: "Le pilote graphique est lent ({upload:.0} Mo/s) : le jeu va saccader. Redémarrer l'ordinateur règle généralement le problème."
 
 "Crash: {:.0} kJ":
+  de: "Unfall: {:.0} kJ"
   fr: "Choc : {:.0} kJ"
 
 "Mirror {}: field of view {:.0}° (the bus's {:.0}°)":
@@ -27299,15 +27337,19 @@ _version: 2
   fr: "Rétroviseur {} : {:+.1}° à l'horizontale, {:+.1}° à la verticale (Ctrl+Alt+flèches)"
 
 "The engine is off  ({e} electrics, {m} starter; mod buses with an ignition key turn it with {e}: press again and hold. Shift+U does it all)":
+  de: "Der Motor ist aus ({e} Elektronik, {m} Anlasser; Mod-Busse mit einem Zündschlüssel, drehen mit {e}: nochmals drücken und halten. Umschalt+U macht alles)"
   fr: "Le moteur est coupé  ({e} électricité, {m} démarreur ; les bus de mods avec clé de contact démarrent avec {e} : appuyez de nouveau et maintenez. Shift+U fait tout)"
 
 "The gearbox is in N: press {d}, or click it. Buses like the Citaro take D only with the brake held":
+  de: "Das Getriebe ist in N: drücke {d}, oder klicke es. Busse wie der Citaro schalten nur in D, wenn die Bremse gehalten wird"
   fr: "La boîte est sur N : appuyez sur {d} ou cliquez dessus. Les bus comme le Citaro ne passent en D qu'avec le frein enfoncé"
 
 "Parking brake is on  ({k} releases it)":
+  de: "Feststellbremse ist aktiviert  ({k} löst diese)"
   fr: "Le frein de stationnement est serré  ({k} le desserre)"
 
 "The tour starts at {}: the clock was moved from {from} to {}":
+  de: "Der Kurs startet um {}: Die Uhrzeit wurde von {from} zu {} gestellt"
   fr: "Le service commence à {} : l'horloge est passée de {from} à {}"
 
 "New object {name}: taken away (Delete brings it back)":
@@ -27328,16 +27370,20 @@ _version: 2
 "Press a button on {name} (Esc cancels)":
   fr: "Appuyez sur un bouton de {name} (Échap annule)"
 
-"Graphics profile \"{name}\" loaded: graphics settings apply when the game starts the next time":
+'Graphics profile "{name}" loaded: graphics settings apply when the game starts the next time':
+  de: 'Grafikprofil "{name}" geladen: Grafikeinstellungen werden nach einem Neustart angewendet'
   fr: "Profil graphique « {name} » chargé : les réglages graphiques s'appliquent au prochain lancement du jeu"
 
-"Graphics profile \"{name}\" not found":
+'Graphics profile "{name}" not found':
+  de: 'Grafikprofil "{name}" nicht gefunden'
   fr: "Profil graphique « {name} » introuvable"
 
 "Line {line}, tour {}":
+  de: "Linie {line}, Kurs {}"
   fr: "Ligne {line}, service {}"
 
 "Passenger waiting for a ticket: {name} {value:.2} - press {}":
+  de: "Passagier wartet auf eine Fahrkarte: {name} {value:.2} - drücke {}"
   fr: "Passager qui attend un billet : {name} {value:.2} - appuyez sur {}"
 
 "Mirror {} is back as the bus has it (Shift+R: every mirror)":
@@ -27350,102 +27396,134 @@ _version: 2
   fr: "Enregistré dans l'emplacement {n} : le lanceur reprend à partir de là"
 
 "Host's mods: {pct}% ({:.0} of {:.0} MB) {file}":
+  de: "Mods des Hosts: {pct}% ({:.0} von {:.0} MB) {file}"
   fr: "Mods de l'hôte : {pct} % ({:.0} sur {:.0} Mo) {file}"
 
 "Host's mods: {} files ({:.0} MB) fetched (kept for the next join)":
+  de: "Mods des Hosts: {} Dateien ({:.0} MB) abgerufen (wird für nächstes Beitreten beibehalten)"
   fr: "Mods de l'hôte : {} fichiers ({:.0} Mo) récupérés (gardés pour la prochaine fois)"
 
 "Line {line} · tour {t} · {map}":
+  de: "Linie {line} · Kurs {t} · {map}"
   fr: "Ligne {line} · service {t} · {map}"
 
 "Line {line} · choose a tour · {map}":
+  de: "Linie {line} · Wähle einen Kurs · {map}"
   fr: "Ligne {line} · choisissez un service · {map}"
 
 "Automatic ({auto})":
+  de: "Automatisch ({auto})"
   fr: "Automatique ({auto})"
 
 "No duty chosen: free driving on {map}. Pick a line and a tour under Route to see the roadbook here.":
   fr: "Aucun service choisi : conduite libre sur {map}. Choisissez une ligne et un service sous Itinéraire pour voir la feuille de route ici."
 
 "Line {} · tour {} · from {}":
+  de: "Linie {} · Kurs {} · von {}"
   fr: "Ligne {} · service {} · départ {}"
 
 "Depot file {} has no entries for this line. Type line {} and the terminus code by hand, or press Shift+U.":
+  de: "Depot-/Hofdatei {} hat für diese Linie keine Einträge. Trage die Linie {} und den Code der Endhaltestelle von Hand ein, oder drücke Umschalt+U."
   fr: "Le fichier de dépôt {} n'a aucune entrée pour cette ligne. Saisissez la ligne {} et le code du terminus à la main, ou appuyez sur Shift+U."
 
 "Depot file {} · Shift+U in the game types it for you":
+  de: "Depot-/Hofdatei {} · Umschalt+U trägt alles für dich ein"
   fr: "Fichier de dépôt {} · Shift+U dans le jeu le saisit pour vous"
 
 "Personnel file of {name} deleted.":
+  de: "Speicherstand von {name} gelöscht."
   fr: "Dossier de {name} supprimé."
 
 "Driver {name} created.":
+  de: "Fahrer {name} erstellt."
   fr: "Conducteur {name} créé."
 
-"Loaded \"{name}\".":
+'Loaded "{name}".':
+  de: '"{name}" geladen.'
   fr: "« {name} » chargé."
 
-"Deleted \"{name}\".":
+'Deleted "{name}".':
+  de: '"{name}" gelöscht.'
   fr: "« {name} » supprimé."
 
-"Saved \"{name}\".":
+'Saved "{name}".':
+  de: '"{name}" gespeichert.'
   fr: "« {name} » enregistré."
 
 "Automatic ({} here)":
+  de: "Automatisch ({} hier)"
   fr: "Automatique ({} ici)"
 
 "Gear {gear} (H-pattern)":
+  de: "Gang {gear} (H-pattern)"
   fr: "Rapport {gear} (grille en H)"
 
 "Driving keys: {name} (Settings). Those keys drive the bus and win over the list below. Change any key here and your own layout (Custom controls) is used from then on.":
+  de: "Driving keys: {name} (Einstellungen). Diese Tasten können zum Fahren des Busses genutzt werden und haben eine höhere Priorität als die Liste unten. Passe beliebige Tasten hier an und dein eigenes Layout (benutzerdefinierte Steuerung) wird ab dann genutzt."
   fr: "Touches de conduite : {name} (Paramètres). Ces touches conduisent le bus et l'emportent sur la liste ci-dessous. Changez une touche ici et votre propre disposition (Commandes personnalisées) est utilisée dès lors."
 
-"Add \"{new_action}\" and give it a key":
+'Add "{new_action}" and give it a key':
+  de: 'Füge "{new_action}" hinzu und weise eine Taste zu'
   fr: "Ajouter « {new_action} » et lui donner une touche"
 
 "Anything put into {} is installed by itself once it has finished copying.":
+  de: "Alles was in {} abgelegt ist wird, sobald der Kopiervorgang abgeschlossen ist, automatisch installiert."
   fr: "Tout ce qui est mis dans {} s'installe tout seul une fois la copie terminée."
 
 "Line {line} · tour {t}":
+  de: "Linie {line} · Kurs {t}"
   fr: "Ligne {line} · service {t}"
 
 "Line {line} · choose a tour":
+  de: "Linie {line} · Wähle einen Kurs"
   fr: "Ligne {line} · choisissez un service"
 
 "Real weather from {home} (ICAO can be changed)":
+  de: "Echte Wetterdaten von {home} (ICAO kann angepasst werden)"
   fr: "Météo réelle de {home} (code OACI modifiable)"
 
 "The server plays {}, which is not installed here: it is fetched from the server on joining.":
+  de: "Der Server spielt {}, welche hier nicht installiert ist: Sie wird beim Verbinden zum Server heruntergeladen."
   fr: "Le serveur utilise la carte {}, qui n'est pas installée ici : elle sera téléchargée depuis le serveur à la connexion."
 
 "The host drives on {name}: that map is chosen":
+  de: "Der Host fährt auf {name}: Diese Karte ist ausgewählt"
   fr: "L'hôte conduit sur {name} : cette carte est choisie"
 
 "Game {pid} ended by itself.":
+  de: "Spiel {pid} hat sich selbst beendet."
   fr: "Le jeu {pid} s'est terminé tout seul."
 
 "Game {pid} did not end by itself and was killed - this run is not saved.":
+  de: "Spiel {pid} hat sich nicht selbst beendet, sondern wurde erzwungen - Diese Fahrt wurde nicht gespeichert."
   fr: "Le jeu {pid} ne s'est pas terminé tout seul et a été arrêté de force - cette session n'est pas enregistrée."
 
 "The timetable of {map_folder} is the map's own again (the edited copy was removed)":
+  de: "Der Fahrplan von {map_folder} ist wieder der Originale (die bearbeitete Kopie wurde entfernt)"
   fr: "L'horaire de {map_folder} est de nouveau celui de la carte (la copie modifiée a été supprimée)"
 
 "The timetable of {map_folder} has not been changed here":
+  de: "Der Fahrplan von {map_folder} wurde hier nicht geändert"
   fr: "L'horaire de {map_folder} n'a pas été modifié ici"
 
 "Line {name} is there already":
+  de: "Linie {name} existiert bereits"
   fr: "La ligne {name} existe déjà"
 
 "Line {name} added: give it tours, then save":
+  de: "Linie {name} hinzugefügt: Füge Kurse hinzu und speichere"
   fr: "Ligne {name} ajoutée : donnez-lui des services, puis enregistrez"
 
 "Save all ({n} lines)":
+  de: "Alle Speichern ({n} Linien)"
   fr: "Tout enregistrer ({n})"
 
 "You have {current}. Update now? The launcher downloads the new version ({}) from GitHub and Android installs it; openOMSI then starts again - your mods and settings stay as they are.":
+  de: "Du hast {current}. Jetzt aktualisieren? Der Launcher lädt die neue Version ({}) von GitHub herunter und Android installiert sie; openOMSI startet dann neu - Deine Mods uns Einstellungen bleiben unverändert."
   fr: "Vous avez {current}. Mettre à jour maintenant ? Le lanceur télécharge la nouvelle version ({}) depuis GitHub et Android l'installe ; openOMSI redémarre ensuite - vos mods et réglages restent tels quels."
 
 "You have {current}. Update now? The launcher downloads the new version ({}) from GitHub, puts it in place of this one and starts again - your mods and settings stay as they are.":
+  de: "Du hast {current}. Jetzt aktualisieren? Der Launcher lädt die neue Version ({}) von GitHub herunter, ersetzt die alte und startet neu - Deine Mods uns Einstellungen bleiben unverändert."
   fr: "Vous avez {current}. Mettre à jour maintenant ? Le lanceur télécharge la nouvelle version ({}) depuis GitHub, la met à la place de celle-ci et redémarre - vos mods et réglages restent tels quels."
 
 "All {n} mirrors of this bus have a panel already":
@@ -27461,34 +27539,44 @@ _version: 2
   fr: "Le panneau montre le rétroviseur {} sur {}"
 
 "Downloading the translation model: {} %":
+  de: "Übersetzungsmodell herunterladen: {} %"
   fr: "Téléchargement du modèle de traduction : {} %"
 
 "paid: {paid:.2}  (change {:.2})":
+  de: "Gegeben: {paid:.2}  (Wechselgeld {:.2})"
   fr: "payé : {paid:.2}  (monnaie {:.2})"
 
 "KY_{action} added. Press its key now.":
   fr: "KY_{action} ajouté. Appuyez maintenant sur la touche à lui attribuer."
 
 "This bus takes parts from vehicle pack(s) that are not installed: {} (install them for its displays and devices)":
+  de: "Dieser Bus nutzt Teile von Fahrzeugpaketen, die nicht installiert sind: {} (Installiere sie für die Bildschirme und Geräte des Busses)"
   fr: "Ce bus utilise des pièces de pack(s) de véhicules non installé(s) : {} (installez-les pour que ses afficheurs et équipements fonctionnent)"
 
 "openOMSI {} could not be downloaded: {e}":
+  de: "openOMSI {} konnte nicht heruntergeladen werden: {e}"
   fr: "openOMSI {} n'a pas pu être téléchargé : {e}"
 
 "openOMSI was not updated to {}: the installation was cancelled.":
+  de: "openOMSI wurde nicht auf {} aktualisiert: Die Installation wurde abgebrochen."
   fr: "openOMSI n'a pas été mis à jour vers {} : l'installation a été annulée."
 
 "openOMSI was not updated to {}: installing apps was not allowed for openOMSI (Settings → Apps → openOMSI → Install unknown apps).":
+  de: "openOMSI wurde nicht auf {} aktualisiert: Die Installation von Anwendungen wurde für openOMSI nicht zugelassen (Einstellungen → Apps → openOMSI → Unbekannte Apps installieren)."
   fr: "openOMSI n'a pas été mis à jour vers {} : l'installation d'applications n'est pas autorisée pour openOMSI (Paramètres → Applications → openOMSI → Installer des applis inconnues)."
 
 "openOMSI {} is installed; start it again yourself ({e}).":
+  de: "openOMSI {} wurde installiert; Bitte starte es neu ({e})."
   fr: "openOMSI {} est installé ; relancez-le vous-même ({e})."
 
 "METAR of {} (fetched at the start)":
+  de: "METAR von {} (beim Start abgerufen)"
   fr: "METAR de {} (récupéré au démarrage)"
 
 "the host plays on {theirs}, which is not installed here - install that map to meet the others":
+  de: "der Host spielt auf {theirs}, welche hier nicht installiert ist - Installiere diese Karte, um die anderen zu treffen"
   fr: "l'hôte joue sur {theirs}, qui n'est pas installée ici - installez cette carte pour retrouver les autres"
 
 "the host's season ({}) differs from the one loaded here ({}) - start the game again to see it":
+  de: "die Jahreszeit vom Host ({}) unterscheidet sich von der aktuell geladenen ({}) - Starte das Spiel neu, um sie zu sehen"
   fr: "la saison de l'hôte ({}) diffère de celle chargée ici ({}) - relancez le jeu pour la voir"
